@@ -1,0 +1,32 @@
+/* ------> GRID <------ */
+
+body {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto auto auto 180px;
+    grid-template-areas: 
+    "header     header"
+    "banner     banner"
+    "contenido  contenido"
+    "footer     footer";
+}
+
+@include notebook {
+    body {
+        grid-template-rows: 80px auto auto 75px;
+        grid-template-areas: 
+        "header     header"
+        "banner     contenido"
+        "banner     contenido"
+        "footer     footer";
+    }
+    
+    #grid-2 {
+        grid-template-rows: 80px auto auto 75px;
+        grid-template-areas: 
+        "header     header"
+        "banner     banner"
+        "contenido  contenido"
+        "footer     footer";
+    }
+}

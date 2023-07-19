@@ -1,0 +1,57 @@
+/* ------> FOOTER <------ */
+
+.footer {
+    background-color: $grisOscuro;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    &__logo {
+        img {
+            height: 75px;
+            filter: drop-shadow(0px 0px 5px $grisClaro);
+        }
+    }
+
+    &__creditos {
+        font-size: 0.8rem;
+        text-align: center;
+        h3 {
+            color: $plateado;
+            font-weight: 500;
+        }
+        p {
+            color: $rosaOscuro;
+            font-weight: 300;
+        }
+    }
+
+    &__socials {
+        .material-icons {
+            color: $plateado;
+            font-size: 1.3rem;
+            padding: 0 0.3rem;
+
+            &:hover {
+                color: $rosaOscuro;
+            }
+        }
+    }
+}
+
+@include notebook {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__logo {
+        img {
+            height: 65px;
+        }
+    }
+}

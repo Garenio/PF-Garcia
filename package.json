@@ -1,0 +1,6 @@
+{
+  "description": "",
+  "scripts": {
+    "wsass" : "sass --watch ./style/sass/style.scss ./style/css/style.css"
+  }
+}

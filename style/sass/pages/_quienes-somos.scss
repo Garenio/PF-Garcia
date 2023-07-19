@@ -1,0 +1,91 @@
+/* ------> QUIENES SOMOS <------ */
+
+body {
+    #quienesSomos__banner {
+        grid-area: banner;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: $plateado;
+        height: fit-content;
+
+        @include notebook {
+            height: auto;
+
+        }
+
+        img {
+            width: 90%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(56, 56, 56, 0.445);
+
+            @include notebook {
+                border-radius: 35px;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        p {
+            text-align: center;
+            padding: 1rem;
+            max-width: 90%;
+        }
+    }
+
+    #quienesSomos__contenido {
+        grid-area: contenido;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: fit-content;
+
+        @include notebook {
+
+            justify-content: space-around;
+            align-self: center;
+        }
+
+
+        .quienesSomos__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            padding: 2rem 0;
+
+            @include tablet {
+                flex-direction: row;
+            }
+
+            .material-icons {
+                background-color: $rosaOscuro;
+                border-radius: 50%;
+                font-size: 5rem;
+                padding: 1rem;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .quienesSomos__card--text {
+                padding-left: 1rem;
+                h2 {
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.btn {
+    padding: 0.6rem;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#btn--login {
+    @extend .btn;
+    background-color: $plateado;
+    color: $grisOscuro;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        background-color: $rosaOscuro;
+    }
+}
+
+#btn--rosaClaro {
+    @extend .btn;
+    background-color: $rosaClaro;
+    color: $grisOscuro;
+}
+
+#btn--rosaOscuro {
+    @extend .btn;
+    background-color: $rosaOscuro;
+    color: $grisOscuro;
+
+    &:hover {
+        background-color: $plateado;
+    }
+}
+
+#btn--grisClaro {
+    @extend .btn;
+    background-color: $grisClaro;
+    color: $grisOscuro;
+}
+
+#btn--grisOscuro {
+    @extend .btn;
+    background-color: $grisOscuro;
+    color: $plateado;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        color: $plateado;
+        transform: scale(1.1);
+    }
+}
