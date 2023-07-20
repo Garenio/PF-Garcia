@@ -415,15 +415,6 @@ body #metodos__banner {
     height: auto;
     min-height: 45vh;
   }
-  body #metodos__banner .metodos__banner--texto {
-    width: 60%;
-  }
-  body #metodos__banner .metodos__banner--texto h1 {
-    padding: 1.5rem 0;
-  }
-  body #metodos__banner .metodos__banner--texto h5 {
-    padding: 1.5rem 0;
-  }
 }
 body #metodos__banner .metodos__banner--video iframe {
   padding: 1rem 0;
@@ -456,6 +447,23 @@ body #metodos__banner .metodos__banner--texto p {
 body #metodos__banner .metodos__banner--texto h5 {
   font-style: italic;
   font-size: 0.8rem;
+}
+@media only screen and (min-width: 1024px) {
+  body #metodos__banner .metodos__banner--texto {
+    width: 60%;
+  }
+  body #metodos__banner .metodos__banner--texto h1 {
+    font-size: 3rem;
+    padding: 1.5rem 0 1.5rem 1rem;
+  }
+  body #metodos__banner .metodos__banner--texto p {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+  }
+  body #metodos__banner .metodos__banner--texto h5 {
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+  }
 }
 body #metodos__contenido {
   grid-area: contenido;

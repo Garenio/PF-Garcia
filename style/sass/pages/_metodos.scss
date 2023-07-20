@@ -15,18 +15,6 @@ body {
             padding: 1rem;
             height: auto;
             min-height: 45vh;
-
-            .metodos__banner--texto {
-                width: 60%;
-
-                h1 {
-                    padding: 1.5rem 0;
-                }
-
-                h5 {
-                    padding: 1.5rem 0;
-                }
-            }
         }
 
         .metodos__banner--video {
@@ -64,6 +52,25 @@ body {
             h5 {
                 font-style: italic;
                 font-size: 0.8rem;
+            }
+
+            @include largeScreen {
+                width: 60%;
+
+                h1 {
+                    font-size: 3rem;
+                    padding: 1.5rem 0 1.5rem 1rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    padding-left: 1rem;
+                }
+
+                h5 {
+                    font-size: 1.3rem;
+                    padding: 1.5rem 0;
+                }
             }
         }
     }
