@@ -603,7 +603,6 @@ body #contacto__contenido .contacto__formulario--imagen {
 @media only screen and (min-width: 768px) {
   body #contacto__contenido .contacto__formulario--imagen {
     width: 100%;
-    margin: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -612,6 +611,7 @@ body #contacto__contenido .contacto__formulario--imagen {
     justify-content: space-between;
     align-items: center;
     height: auto;
+    margin: 0;
   }
 }
 body #contacto__contenido .contacto__formulario--imagen img {
@@ -697,6 +697,11 @@ body #contacto__contenido .contacto__politicas p {
   color: #D6D6D6;
   font-size: 1rem;
   font-style: italic;
+}
+@media only screen and (min-width: 1200px) {
+  body #contacto__contenido .contacto__politicas p {
+    padding: 0 5rem 2rem 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
