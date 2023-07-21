@@ -571,43 +571,82 @@ body #contacto__contenido .contacto__formulario {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 1200px) {
+  body #contacto__contenido .contacto__formulario {
+    justify-content: space-between;
+  }
+}
 @media only screen and (min-width: 768px) {
   body #contacto__contenido .contacto__formulario {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
+@media only screen and (min-width: 768px) and (min-width: 1200px) {
+  body #contacto__contenido .contacto__formulario {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+}
 body #contacto__contenido .contacto__formulario--imagen {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  margin: 1rem;
   width: 90%;
+  margin-top: 2rem;
 }
 @media only screen and (min-width: 768px) {
   body #contacto__contenido .contacto__formulario--imagen {
-    width: 40%;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body #contacto__contenido .contacto__formulario--imagen {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
   }
 }
 body #contacto__contenido .contacto__formulario--imagen img {
-  width: 90%;
+  height: 6rem;
+}
+@media only screen and (min-width: 768px) {
+  body #contacto__contenido .contacto__formulario--imagen img {
+    height: 8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body #contacto__contenido .contacto__formulario--imagen img {
+    height: 18rem;
+  }
 }
 body #contacto__contenido .contacto__formulario--imagen iframe {
-  padding-bottom: 1rem;
+  width: 60%;
+  height: 8rem;
+}
+@media only screen and (min-width: 1200px) {
+  body #contacto__contenido .contacto__formulario--imagen iframe {
+    height: 14rem;
+    margin: 2rem;
+  }
 }
 body #contacto__contenido .contacto__formulario--campos {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
-  width: 90%;
+  padding: 2rem;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   body #contacto__contenido .contacto__formulario--campos {
-    width: 60%;
+    width: 90%;
   }
 }
 body #contacto__contenido .contacto__formulario--campos form {
@@ -654,7 +693,7 @@ body #contacto__contenido .contacto__formulario--campos form div label a {
 }
 body #contacto__contenido .contacto__politicas p {
   text-align: justify;
-  padding: 0 3rem 2rem 3rem;
+  padding: 0 2rem 2rem 2rem;
   color: #D6D6D6;
   font-size: 1rem;
   font-style: italic;

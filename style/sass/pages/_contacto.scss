@@ -49,31 +49,64 @@ body {
             justify-content: center;
             align-items: center;
 
-            @include notebook {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+            @include xlargeScreen {
+                justify-content: space-between;
             }
 
-            &--imagen {
+            @include notebook {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 1rem;
+
+                @include xlargeScreen {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: auto;
+                }
+            }
+
+            &--imagen {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
                 width: 90%;
+                margin-top: 2rem;
 
                 @include notebook {
-                    width: 40%;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                @include xlargeScreen {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: auto;
                 }
 
                 img {
-                    width: 90%;
+                    height: 6rem;
+
+                    @include notebook {
+                        height: 8rem;
+                    }
+
+                    @include xlargeScreen {
+                        height: 18rem;
+                    }
                 }
 
                 iframe {
-                    padding-bottom: 1rem;
+                    width: 60%;
+                    height: 8rem;
+
+                    @include xlargeScreen {
+                        height: 14rem;
+                        margin: 2rem;
+                    }
                 }
                
             }
@@ -82,11 +115,11 @@ body {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                padding: 3rem;
-                width: 90%;
+                padding: 2rem;
+                width: 100%;
 
                 @include notebook {
-                    width: 60%;
+                    width: 90%;
                 }
                 
                 form {
@@ -144,7 +177,7 @@ body {
         .contacto__politicas {
             p {
                 text-align: justify;
-                padding: 0 3rem 2rem 3rem;
+                padding: 0 2rem 2rem 2rem;
                 color: $plateado;
                 font-size: 1rem;
                 font-style: italic;
