@@ -453,15 +453,15 @@ body #metodos__banner .metodos__banner--texto h5 {
     width: 60%;
   }
   body #metodos__banner .metodos__banner--texto h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1.5rem 0 1.5rem 1rem;
   }
   body #metodos__banner .metodos__banner--texto p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-left: 1rem;
   }
   body #metodos__banner .metodos__banner--texto h5 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 1.5rem 0;
   }
 }
@@ -635,6 +635,22 @@ body #contacto__contenido .contacto__formulario--campos form textarea {
   border-radius: 0.5rem;
   border: none;
   padding: 0.5rem;
+  max-width: 100%;
+  resize: none;
+}
+body #contacto__contenido .contacto__formulario--campos form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+body #contacto__contenido .contacto__formulario--campos form div label {
+  color: #D6D6D6;
+  padding: 1rem;
+}
+body #contacto__contenido .contacto__formulario--campos form div label a {
+  text-decoration: none;
+  color: #F58F7C;
 }
 body #contacto__contenido .contacto__politicas p {
   text-align: justify;
@@ -642,4 +658,6 @@ body #contacto__contenido .contacto__politicas p {
   color: #D6D6D6;
   font-size: 1rem;
   font-style: italic;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
