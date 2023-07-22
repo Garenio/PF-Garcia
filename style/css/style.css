@@ -704,4 +704,21 @@ body #contacto__contenido .contacto__politicas p {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+#login__ingreso {
+  grid-area: banner;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4F4F51;
+}
+#login__ingreso img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+#login__contenido {
+  grid-area: contenido;
+}/*# sourceMappingURL=style.css.map */
