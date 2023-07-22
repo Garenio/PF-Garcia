@@ -11,7 +11,7 @@ Se deberán seguir los siguientes pasos para obtener el proyecto de manera local
 
 1. Clonar el repositorio:
    ```sh
-   git clone https://github.com/tu_usuario_/Nombre-Proyecto.git
+   git clone https://github.com/Garenio/PF-Garcia.git
    ```
 2. Instalar los paquetes necesarios:
    ```sh
