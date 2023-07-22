@@ -27,6 +27,7 @@
     @extend .btn;
     background-color: $rosaOscuro;
     color: $grisOscuro;
+    border: none;
 
     &:hover {
         background-color: $plateado;
